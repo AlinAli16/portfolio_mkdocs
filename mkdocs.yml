@@ -1,5 +1,5 @@
 site_name: Alinali16 portfolio # Название сайта
-site_description: Профессиональное портфолио # Описание сайта, добавляется в meta-теги
+site_description: Портфолио в MkDocs Alinali16 # Описание сайта, добавляется в meta-теги
 theme: # Тема сайта, информация о ее параметрах
   name: material # Название темы
   logo: images/logo.png # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
@@ -13,8 +13,8 @@ theme: # Тема сайта, информация о ее параметрах
       toggle:
         icon: material/weather-sunny # Иконка для активации светлой темы
         name: Выключить солнышко # Всплывающий текст-подсказка
-      primary: purple # Основной цвет
-      accent: indigo # Акцентный цвет
+      primary: deep purple # Основной цвет
+      accent: purple # Акцентный цвет
       # вы можете использовать любой цвет из списка: 
       # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
       # green; light green; lime; yellow; amber; orange; deep orange; brown; 
@@ -26,12 +26,12 @@ theme: # Тема сайта, информация о ее параметрах
         icon: material/weather-night
         name: Позвать солнышко
       primary: deep purple
-      accent: pink
+      accent: purple
   features: # настройки функциональностей темы
     #- navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
     - navigation.path # Хлебные крошки
     - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
-    #- navigation.tabs # Верхнее меню
+    - navigation.tabs # Верхнее меню
     - navigation.tabs.sticky # Фиксация верхнего меню
     #- navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
     #- toc.integrate # Фиксирует оглавление страницы в левом меню
@@ -43,17 +43,9 @@ theme: # Тема сайта, информация о ее параметрах
 
 nav: # Структура сайта
 - Главная страница: index.md
-- 'Markdown: базовый синтаксис': markdown.md
-- Тех.минимум по git: git-for-tech-writer.md
-- Стайлгайд для пошаговых инструкций: styleguide.md
-- Домашний проект:
-  - pet-project/index.md # корневая страница подраздела; работает при включенной функции navigation.indexes
-  - Настройка MkDocs: pet-project/mkdocs-setup.md # вложенные страницы отбиваются отступами
-- Вебинары: meetings.md
-- Домашние задания:
-  - Домашнее задание №0: docs/instructions/page 1.md
-  - Домашнее задание N1: homeworks/homework-1.md
-  - Домашнее задание N2: homeworks/homework-2.md
+- Инструкции:
+  - Отложенные сообщения в Telegram: instructions/delay_message_tg.md
+
 
 markdown_extensions: # Расширения markdown
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
