@@ -42,9 +42,12 @@ theme: # Тема сайта, информация о ее параметрах
     - content.code.copy # Кнопка копирования в блоке кода
 
 nav: # Структура сайта
-- Главная страница: index.md
-- Инструкции:
+- Главная страница: 
+  - index.md
+- Docs as code:
+  - instructions/index.md
   - Отложенные сообщения в Telegram: instructions/delay_message_tg.md
+
 
 
 markdown_extensions: # Расширения markdown
