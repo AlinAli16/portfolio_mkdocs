@@ -68,3 +68,6 @@ markdown_extensions: # Расширения markdown
 
 plugins:
   - search # Плагин для подключения поиска на портале
+
+copyright: |
+  &copy; 2026 Alinali16
