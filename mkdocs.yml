@@ -68,6 +68,14 @@ markdown_extensions: # Расширения markdown
 
 plugins:
   - search # Плагин для подключения поиска на портале
+  - tags:  # Плагин для подключения тегов
+      tags_allowed:
+      - Портфолио
+      - manuals
+      - rules
+      - helps
+  - glightbox
+
 
 copyright: |
   &copy; 2026 Alinali16
