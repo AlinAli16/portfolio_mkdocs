@@ -1,7 +1,7 @@
 ---
 tags: 
-    - Портфолио
-    - helps
+    - portfolio
+    - manuals
 ---
 
 # Отложенные сообщения в Telegram
