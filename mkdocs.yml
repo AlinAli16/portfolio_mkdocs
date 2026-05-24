@@ -79,7 +79,7 @@ plugins:
       tags_allowed:
       - portfolio
       - manuals
-#      - helps
+      - helps
 
 
 copyright: |
