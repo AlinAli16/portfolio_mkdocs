@@ -28,11 +28,11 @@ theme: # Тема сайта, информация о ее параметрах
       primary: deep purple
       accent: purple
   features: # настройки функциональностей темы
-    #- navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
-    - navigation.path # Хлебные крошки
+    #- navigation.sections
     - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
-    - navigation.tabs # Верхнее меню
-    - navigation.tabs.sticky # Фиксация верхнего меню
+    #- navigation.tabs # Верхнее меню
+    #- navigation.tabs.sticky # Фиксация верхнего меню
+    #- navigation sections # Настройка спойлеров в левом меню
     #- navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
     #- toc.integrate # Фиксирует оглавление страницы в левом меню
     - navigation.instant # Функция быстрой загрузки страниц
@@ -40,6 +40,7 @@ theme: # Тема сайта, информация о ее параметрах
     - search.suggest # Подсказки при вводе поискового запроса
     - search.highlight # Подсветка результатов поиска в тексте страницы
     - content.code.copy # Кнопка копирования в блоке кода
+   #- task-lists # чекбоксы
 
 nav: # Структура сайта
 - Главная страница: 
@@ -47,32 +48,36 @@ nav: # Структура сайта
 - Docs as code:
   - instructions/index.md
   - Отложенные сообщения в Telegram: instructions/delay_message_tg.md
-
-
+- Портфолио: portfolio.md
 
 markdown_extensions: # Расширения markdown
+  - md_in_html # Поддержка markdown внутри html
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
   - footnotes # Поддержка встроенных сносок на страницах
   - attr_list # Использование html-атрибутов и CSS в элементах markdown
-  - md_in_html # Поддержка markdown внутри html
   - def_list # Поддержка списков определений
   - pymdownx.tabbed: # Использование вкладок (табов)
       alternate_style: true
   - pymdownx.details # Использование спойлеров (катов)
   - pymdownx.highlight: # Подсветка синтаксиса в блоках кода
       anchor_linenums: true
-  - pymdownx.superfences # Поддержка вложенных блоков кода
-  - pymdownx.emoji: # Иконки и эмодзи
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences: # Поддержка вложенных блоков кода
+      custom_fences:
+        - name: raw
+          class: raw
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets: # Использование заимствованного контента
+      base_path:
+        - docs
+      check_paths: false
+  - pymdownx.caret # Использование выделения, подчеркивания и зачеркивания
 
 plugins:
   - search # Плагин для подключения поиска на портале
   - tags:  # Плагин для подключения тегов
       tags_allowed:
-      - Портфолио
+      - portfolio
       - manuals
-      - rules
       - helps
   - glightbox
 
