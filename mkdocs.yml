@@ -74,12 +74,12 @@ markdown_extensions: # Расширения markdown
 
 plugins:
   - search # Плагин для подключения поиска на портале
+  - glightbox  
   - tags:  # Плагин для подключения тегов
       tags_allowed:
       - portfolio
       - manuals
       - helps
-  - glightbox
 
 
 copyright: |
