@@ -86,6 +86,8 @@ plugins:
       - helps
   - swagger-ui-tag
   - redoc-tag
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
 
 
 copyright: |
