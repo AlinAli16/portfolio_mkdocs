@@ -8,8 +8,9 @@ theme: # Тема сайта, информация о ее параметрах
     code: Roboto Mono # Шрифт для текста кода
   language: ru # Язык
   palette: # Настройки светлой и тёмной тем
+    - scheme: my-scheme
     # Настройки светлой темы
-    - scheme: default 
+    #- scheme: default 
       toggle:
         icon: material/weather-sunny # Иконка для активации светлой темы
         name: Выключить солнышко # Всплывающий текст-подсказка
@@ -54,7 +55,6 @@ nav: # Структура сайта
     - API redoc notsap: api/redoc.md
 - Портфолио: portfolio.md
 
-
 markdown_extensions: # Расширения markdown
   - md_in_html # Поддержка markdown внутри html
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -89,6 +89,11 @@ plugins:
   - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+      theme:
+       enabled: false
+
+extra_css:
+  - stylesheets/extra.css
 
 
 copyright: |
