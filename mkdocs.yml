@@ -48,9 +48,10 @@ nav: # Структура сайта
 - Docs as code:
   - instructions/index.md
   - Отложенные сообщения в Telegram: instructions/delay_message_tg.md
-  - Инструкция для Нотсапп: instructions/notsap.md
-  - API swagger notsap: api/swagger.md
-  - API redoc notsap: api/redoc.md
+  - Инструкция для Нотсапп: 
+    - instructions/notsap.md
+    - API swagger notsap: api/swagger.md
+    - API redoc notsap: api/redoc.md
 - Портфолио: portfolio.md
 
 
