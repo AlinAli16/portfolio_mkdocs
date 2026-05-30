@@ -1,0 +1,27 @@
+/* Настройки светлой схемы */
+
+[data-md-color-scheme="my-scheme"] {
+  --md-primary-fg-color: #3e0c95d8; /*Основной цвет*/
+  --md-accent-fg-color: #7d2ca5b3; /*Акцентный цвет*/
+  --md-typeset-a-color: #9d61cf; /*Цвет ссылок*/
+  --md-default-bg-color: #f0f8ff; /*Фоновый цвет*/
+  --md-default-fg-color: #4d0a67; /*Основной цвет текста (абзацы, списки, подзаголовки, nav и toc)*/
+  --md-code-bg-color: #ffffff; /*Цвет фона блока кода*/
+  --md-code-fg-color: #571265; /*Цвет текста в блоке кода*/
+  --md-default-fg-color--light: #5e0c40; /*Цвет h1 и заголовков блоков toc и nav*/
+}
+
+/*Параметры текста статей*/
+.md-typeset {
+    font-family: 'Tahoma', 'arial';
+    font-weight: 200;
+    font-size: 16px;
+    
+}
+/*Параметры текста nav и toc*/
+.md-nav {
+    font-family: 'Tahoma', 'arial';
+    font-weight: 400;
+    font-size: 14px;
+    
+}
