@@ -31,11 +31,11 @@ theme: # Тема сайта, информация о ее параметрах
   features: # настройки функциональностей темы
     #- navigation.sections
     - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
-    #- navigation.tabs # Верхнее меню
+    - navigation.tabs # Верхнее меню
     #- navigation.tabs.sticky # Фиксация верхнего меню
     #- navigation sections # Настройка спойлеров в левом меню
-    #- navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
-    #- toc.integrate # Фиксирует оглавление страницы в левом меню
+    - navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
+    - toc.integrate # Фиксирует оглавление страницы в левом меню
     - navigation.instant # Функция быстрой загрузки страниц
     - navigation.top # Добавляет кнопку «к началу» для быстрой обратной прокрутки страницы
     - search.suggest # Подсказки при вводе поискового запроса
@@ -53,7 +53,7 @@ nav: # Структура сайта
     - instructions/notsap.md
     - API swagger notsap: api/swagger.md
     - API redoc notsap: api/redoc.md
-- Портфолио: portfolio.md
+#- Портфолио: portfolio.md
 
 markdown_extensions: # Расширения markdown
   - md_in_html # Поддержка markdown внутри html
@@ -85,6 +85,7 @@ plugins:
       - portfolio
       - manuals
       - helps
+      - api
   - swagger-ui-tag
   - redoc-tag
   - plantuml:

@@ -11,3 +11,17 @@
   --md-default-fg-color--light: #5e0c40; /*Цвет h1 и заголовков блоков toc и nav*/
 }
 
+/*Параметры текста статей*/
+.md-typeset {
+    font-family: 'Tahoma', 'arial';
+    font-weight: 200;
+    font-size: 16px;
+    
+}
+/*Параметры текста nav и toc*/
+.md-nav {
+    font-family: 'Tahoma', 'arial';
+    font-weight: 400;
+    font-size: 14px;
+    
+}

@@ -1,6 +1,6 @@
 # Портфолио
 
-Мое портфолио
+Шаблон для портфолио
 
 
 # --8<-- [start:alter]
@@ -11,3 +11,5 @@
 --8<-- "source:original"
 
 <!-- material/tags { include: [portfolio] } -->
+
+![небо](../images/sky.jpg)
