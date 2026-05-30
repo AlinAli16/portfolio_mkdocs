@@ -3,10 +3,10 @@ tags:
     - portfolio
     - api
 hide:
- -toc
- -nav
+    - toc
+    - nav
 ---
 
 # API Нотсап Redoc
 
-<redoc src src="openapi.yml"/>
+<redoc src="openapi.yml"/>
